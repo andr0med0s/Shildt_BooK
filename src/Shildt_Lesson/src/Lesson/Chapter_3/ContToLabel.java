@@ -25,3 +25,24 @@ continue управление передается внешнему циклу, 
 грамм. Но в особых случаях, когда требуется преждевременное прекращение
 цикла, инструкция continue позволяет сделать это, не нарушая структуру кода.
   */
+
+//стр 161
+// Использование continue с меткой
+class ContinueLabel{
+    public static void main(String[] args) {
+        outer: for(int i = 0; i < 10; i++){
+        for(int j = 0; j<10; j++) {
+            if (j > i) {
+                System.out.println();
+                continue outer;
+            }
+            System.out.print(" " + (i * j));
+        }
+        }
+        System.out.println();
+    }
+}
+/*
+Оператор continue в этом примере завершает цикл по j и продолжает со
+следующей итерации цикла по i.
+ */

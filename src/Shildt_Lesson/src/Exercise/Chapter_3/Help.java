@@ -4,7 +4,7 @@ package Shildt_Lesson.src.Exercise.Chapter_3;
 Упражнение 3.1
 Простая справочная система.
 */
-public class Help {
+ class Help {
     public static void main(String[] args) 
         throws java.io.IOException {
         
