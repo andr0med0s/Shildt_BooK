@@ -14,6 +14,21 @@ class Vehicle {   //Объявление класса создает новый 
     //   void range(){ не возвращает вызывающей части  программы никаких данных.
 //        System.out.println("Дальность - " +  fuelcap * mpg + " миль.");
     //   }
+
+    Vehicle() {
+        // * если создается конструктор с параметрами,
+        //то дефолтный конструктор перестает быть и
+        // необходимо создать пустой конструктор вручную
+    }
+
+    //-------- Добавление конструктора----стр 166
+    Vehicle(int p, int f, int m) {
+        passengers = p;
+        fuelcap = f;
+        mpg = m;
+    }
+
+
     int range() {
         return mpg * fuelcap;
     }
@@ -24,6 +39,35 @@ class Vehicle {   //Объявление класса создает новый 
         return (double) miles / mpg;
     }
 }
+
+//class VehConsDemo  демонстрация конструктора с параметром стр 166
+
+class VehConsDemo {
+    private static int dist;
+
+    public static void main(String[] args) {
+        //Завершение создания объектов транспортных средств
+        Vehicle minivan = new Vehicle(7, 16, 21); //При создании объекты minivan и sportscar 
+                                         // инициализируются конструктором Vehicle (int p, int f, int m).
+
+        Vehicle sportscar = new Vehicle(2, 14, 12);
+        double gallons;
+        int dist = 252;
+
+        gallons = minivan.fuelneeded(dist);
+
+        System.out.println("Для преодоления " + dist +
+                " миль мини-фургону требуется " +
+                gallons + " галлонов топлива");
+
+        gallons = sportscar.fuelneeded(dist);
+
+        System.out.println("Для преодоления " + dist +
+                " миль спортивному автомобилю требуется " +
+                gallons + " галлонов топлива");
+    }
+}
+
 
 // В этом классе объявляется объект типа Vehicle
 class VehicleDemo {
@@ -41,7 +85,7 @@ class VehicleDemo {
         /*
         имя переменной указывается после имени объекта и отделяется от него точкой:
 
-        объект. член
+        объект.член
 
         В этой форме объект указывается слева, а член класса — справа от точки.
          */
@@ -91,6 +135,21 @@ class TwoVehicles {
     }
 }
 
+/*
+Несмотря на то что обе переменные, car1 и саг2, ссылаются на один и тот
+же объект, они никак иначе не связаны. Например, в результате приведенной
+ниже последовательности операций присваивания просто изменяется объект, на
+который ссылается переменная саг2.
+Vehicle car1 = new Vehicle();   // 1 объект
+Vehicle car2 = car1;
+Vehicle car3 = new Vehicle();   // 2 объект
+car2 = саr3;        // и только теперь переменные car2 и саr3
+                   // ссылаются на один и тот же объект
+*/
+
+// Добавление метода ranged в класс Vehicle
+// стр 149
+
 class AddMeth {
     public static void main(String[] args) {
         Vehicle minivan = new Vehicle();
@@ -139,6 +198,9 @@ class AddMeth {
         продолжится со строки кода, следующей за вызовом метода.
   */
 
+// Использование возвращаемого значения
+//стр 153
+
 class RetMeth {
     public static void main(String[] args) {
         Vehicle minivan = new Vehicle();
@@ -171,6 +233,7 @@ class RetMeth {
 расчет объема топлива, необходимого транспортному средству
 для преодоления заданного расстояния.
  */
+// стр 156
 
 class CompFuel {
     public static void main(String[] args) {
@@ -190,8 +253,8 @@ class CompFuel {
         gallons = minivan.fuelneeded(dist);
 
         System.out.println("Для преодоления " + dist +
-                            " миль мини-фургону требуется " +
-                            gallons + " галлонов топлива");
+                " миль мини-фургону требуется " +
+                gallons + " галлонов топлива");
 
         gallons = sportcar.fuelneeded(dist);
 
