@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chaptr_4;
+package Shildt_Lesson.src.Exercise.Chapter_4;
 
 // стр 158
 
