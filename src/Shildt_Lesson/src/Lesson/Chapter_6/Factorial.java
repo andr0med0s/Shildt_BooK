@@ -7,7 +7,7 @@ package Shildt_Lesson.src.Lesson.Chapter_6;
 является характерной чертой, позволяющей методу вызывать самого себя.
 Метод, который вызывает сам себя, называется рекурсивным.
 * */
-public class Factorial {
+class Factorial {
     //Рекурсивный метод
     int fact(int n) {
         int result;
@@ -32,15 +32,30 @@ public class Factorial {
          *  n), что дает ответ 6.
          * */
     }
+
+    // Вариант программы, вычисляющий факториал
+// итеративным способом
+    int factI(int n) {
+        int t, result;
+        result = 1;
+        for (t = 1; t <= n; t++) result *= t;
+        return result;
+    }
 }
 
 class Recursion {
     public static void main(String[] args) {
         Factorial f = new Factorial();
 
+        System.out.println("Вычисление рекурсивным методом");
         System.out.println("Факториал 3 равен " + f.fact(3));
         System.out.println("Факториал 4 равен " + f.fact(4));
         System.out.println("Факториал 5 равен " + f.fact(5));
+
+        System.out.println("Вычисление итеративным методом");
+        System.out.println("Факториал 3 равен " + f.factI(3));
+        System.out.println("Факториал 4 равен " + f.factI(4));
+        System.out.println("Факториал 5 равен " + f.factI(5));
     }
 }
 /*
