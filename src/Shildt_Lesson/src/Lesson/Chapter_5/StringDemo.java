@@ -255,3 +255,86 @@ class Phone {
     }
 }
 
+/*
+ * стр 207 Полное руководство
+ *
+ * Исследование класса String
+ * */
+// Демонстрация работы с объектами String
+class StringDemo1 {
+    public static void main(String[] args) {
+        String strOb1 = "Первая строка";
+        String strOb2 = "Вторая строка";
+        String strOb3 = strOb1 + " и " + strOb2;
+        System.out.println(strOb1);
+
+        System.out.println(strOb2);
+        System.out.println(strOb3);
+    }
+}
+
+// Демонстрация работы нескольких методов класса String.
+class StringDemo2 {
+    public static void main(String[] args) {
+        String strOb1 = "Первая строка";
+        String strOb2 = "Вторая строка";
+        String strOb3 = strOb1;
+
+        System.out.println("Длина строки strOb1: " + strOb1.length());
+
+        System.out.println("Символ по индексу 3 в строке strOb1: " + strOb1.charAt(3));
+
+        if (strOb1.equals(strOb2))
+            System.out.println("Cтpoкa strOb1 равна строке strOb2");
+        else
+            System.out.println("Cтpoкa strOb1 не равна строке strOb2");
+        if (strOb1.equals(strOb3))
+            System.out.println("Cтpoкa strOb1 равна строке strObЗ");
+        else
+            System.out.println("Cтpoкa strOb1 не равна строке strObЗ");
+    }
+}
+
+// Демонстрация использования массивов String.
+class StringDemo4 {
+    public static void main(String[] args) {
+
+        String[] str = {"один", "два ", "три"};
+        for (int i = 0; i < str.length; i++)
+            System.out.println("str[" + i + "]: " + str[i]);
+    }
+}
+
+//стр 210 полное руководство
+// Отображение всех аргументов командной строки.
+/*
+* Иногда программе при запуске необходимо передать какую-то информа-
+цию. Для этого предназначены аргументы командной строки, передаваемые
+методу main() . Аргумент командной строки представляет собой данные,
+которые следуют непосредственно за именем программы в командной стро-
+ке, когда программа запускается. Получить доступ к аргументам командной
+строки в программе на Java довольно просто - они хранятся в виде строк
+внутри массива типа String, который передается параметру args метода
+main(). Первый аргумент командной строки хранится в args[О] , второй - в
+args [1] и т.д.
+* */
+class CommandLine {
+    public static void main(String[] args) {
+        for (int i = 0; i < args.length; i++)
+            System.out.println("args[" + i + "]: " + args[i]);
+    }
+}
+/*
+* Запустите программу как показано ниже:
+java CommandLine это всего лишь тест 100 -1
+Программа сгенерирует следующий вывод:
+args [ О ] : это
+args [ l ] : всего
+args [ 2 ] : лишь
+args [ 3 ] : тест
+args [ 4 ] : 100
+args [ 5 ] : -1
+* */
+//--------------Помните!
+// Все аргументы командной строки передаются в строковом виде.
+// числовые значения придется вручную преобразовывать в их внутренние формы.

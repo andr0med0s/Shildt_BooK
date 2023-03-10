@@ -221,7 +221,7 @@ class Stack {
         }
     }
 }
-
+//стр 199 полное руководство
 class TestStack {
     public static void main(String[] args) {
         Stack mystack1 = new Stack();

@@ -77,3 +77,4 @@ class SumDemo {
         System.out.println("s2.sum: " + s2.sum);
     }
 }
+
