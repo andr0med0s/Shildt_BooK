@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_6;
+package Lesson.Chapter_6;
 //------------стр 234
 
 /*

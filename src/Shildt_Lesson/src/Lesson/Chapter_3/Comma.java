@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 115
 //  Применение запятых в определении цикла for
 public class Comma {

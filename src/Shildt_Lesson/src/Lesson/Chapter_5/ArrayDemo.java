@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_5;
+package Lesson.Chapter_5;
 //Демонстрация одномерного массива
 //стр 175
 class ArrayDemo {

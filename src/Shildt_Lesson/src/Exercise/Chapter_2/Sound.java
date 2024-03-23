@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_2;
+package Exercise.Chapter_2;
 //стр 72
 /*
 Упражнение 2.1

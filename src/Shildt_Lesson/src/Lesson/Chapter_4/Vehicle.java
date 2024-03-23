@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_4;
+package Lesson.Chapter_4;
 
 
 //стр 144
@@ -43,7 +43,7 @@ class Vehicle {   //Объявление класса создает новый 
 //class VehConsDemo  демонстрация конструктора с параметром стр 166
 
 class VehConsDemo {
-    private static int dist;
+    // private static int dist;
 
     public static void main(String[] args) {
         //Завершение создания объектов транспортных средств
@@ -155,7 +155,7 @@ class AddMeth {
         Vehicle minivan = new Vehicle();
         Vehicle sportcar = new Vehicle();
 
-        int range1, range2;
+        // int range1, range2;
 
         //Присваивание значений полям объекта minivan
         minivan.passengers = 7;

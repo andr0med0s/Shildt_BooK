@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 104
 //Игра в угадывание букв, вторая версия
 /*

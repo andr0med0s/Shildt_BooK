@@ -1,7 +1,8 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 // стр 87
 // Демонстрация роли побочных эффектов
 public class SideEffects {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         int i;
 

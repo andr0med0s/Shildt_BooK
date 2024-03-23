@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_5;
+package Exercise.Chapter_5;
 /*
 Упражнение 5.1 стр 177
 Демонстрация алгоритма пузырьковой сортировки

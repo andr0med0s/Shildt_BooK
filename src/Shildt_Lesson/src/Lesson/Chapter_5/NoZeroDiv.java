@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_5;
+package Lesson.Chapter_5;
 
 /*
 * Оператор ? — один из самых удобных в Java и часто используется

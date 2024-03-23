@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 // стр 127
 class Break3 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_6;
+package Exercise.Chapter_6;
 
 class Queue {
     private char[] q; // массив типа char для хранения элементов очереди

@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_1;
+package Lesson.Chapter_1;
 // стр 53
 // Демонстрация применения инструкции if
  class IfDemo {

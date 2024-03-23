@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_4;
+package Lesson.Chapter_4;
 
 // стр 165 Полное руководство
 // Программа в которой используется класс Box
@@ -183,7 +183,7 @@ class BoxDemo4 {  // Теперь volume ( ) возвращает объем к�
     public static void main(String[] args) {
         Box mybox1 = new Box();
         Box mybox2 = new Box();
-        double vol;
+        // double vol;
 
         //Присвоить значения переменным экземпляра mybox1;
         mybox1.width = 10;

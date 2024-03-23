@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 132
 //  Этот фрагмент кода содержит ошибку
 /*
@@ -6,6 +6,7 @@ package Shildt_Lesson.src.Lesson.Chapter_3;
 фрагмент кода некорректен и не пройдет компиляцию.
 */ 
  class BreakErr {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         
         one: for(int i=0; i<3; i++){

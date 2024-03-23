@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 132
 // Применение инструкции continue
  class ContDemo {

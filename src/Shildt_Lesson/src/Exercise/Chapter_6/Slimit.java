@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_6;
+package Exercise.Chapter_6;
 
 class SumIt {
     int sum(int... n) {

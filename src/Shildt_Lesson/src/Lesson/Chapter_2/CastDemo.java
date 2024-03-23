@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 // стр 91
 // Демонстрация приведенеия типов
 public class CastDemo {

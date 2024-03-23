@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 116
 // Выполнение цикла до тех пор, пока с клавиатуры не будет введена буква S
 public class ForTest {

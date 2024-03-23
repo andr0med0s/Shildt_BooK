@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_4;
+package Lesson.Chapter_4;
 
 //------Полное руководство стр 181
 // Этот класс реализует стек целых чисел, который может хранить 10 значений

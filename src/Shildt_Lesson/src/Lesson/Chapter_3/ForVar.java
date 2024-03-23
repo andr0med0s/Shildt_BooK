@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 // стр 119
 // Объявление переменной цикла в самом цикле for
 public class ForVar {

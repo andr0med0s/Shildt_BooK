@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 // стр 80
 //Демонстрация времени жизни переменной
 public class VarInitDemo {

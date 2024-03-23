@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_2;
+package Exercise.Chapter_2;
 // стр 98
 // Напишите программу, которая находила бы все простые числа в диапазоне
 //от 2 до 100.

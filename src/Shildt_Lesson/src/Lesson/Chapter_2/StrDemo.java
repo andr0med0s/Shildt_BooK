@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 // стр 75
 // Демонстрация управляющих последовательностей в символьных строках
 public class StrDemo {

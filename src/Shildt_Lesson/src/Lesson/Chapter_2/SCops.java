@@ -1,7 +1,8 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 // стр 86
 //Демонстрация использования логических операторов
 public class SCops {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         int n, d, q;
 

@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_5;
+package Lesson.Chapter_5;
 // Побитовые операторы стр 205
 // Преобразование строчных букв английского алфавита в прописные
 

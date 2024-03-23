@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 105
 //------Вложенные условные инструкции if
 // Игра в угадывание букв, третья версия

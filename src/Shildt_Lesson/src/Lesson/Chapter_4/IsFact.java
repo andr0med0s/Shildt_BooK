@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_4;
+package Lesson.Chapter_4;
 // стр 156
 /*
 В методе может быть определено несколько параметров, в таком случае они

@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 118
 // Тело цикла for может быть пустым
 public class Empty3 {

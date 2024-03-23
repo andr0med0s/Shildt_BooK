@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_4;
+package Lesson.Chapter_4;
 //стр 155
 
 //Простой пример применения параметра в методе

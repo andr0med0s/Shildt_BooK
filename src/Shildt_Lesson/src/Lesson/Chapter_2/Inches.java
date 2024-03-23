@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 //стр 67
 /*
 Расчет числа кубических дюймов в кубе объемом в 1 куб. милю

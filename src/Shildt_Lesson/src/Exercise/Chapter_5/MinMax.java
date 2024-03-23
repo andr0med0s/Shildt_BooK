@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_5;
+package Exercise.Chapter_5;
 
 class MinMax {
     public static void main(String[] args) {

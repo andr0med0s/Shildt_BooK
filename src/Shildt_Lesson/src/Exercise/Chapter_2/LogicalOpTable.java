@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_2;
+package Exercise.Chapter_2;
 //стр 93
 // Упражнение 2.2
 // Отображение таблицы истинности для логических операций

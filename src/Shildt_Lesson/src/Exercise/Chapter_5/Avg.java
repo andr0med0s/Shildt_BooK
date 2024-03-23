@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_5;
+package Exercise.Chapter_5;
 
 /*
 * 3. Напишите программу, в которой массив используется для нахождения сред-

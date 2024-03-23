@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_6;
+package Exercise.Chapter_6;
 
 // Отображение символов строки в обратном порядке
 // с помощью рекурсии

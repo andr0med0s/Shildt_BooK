@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_6;
+package Exercise.Chapter_6;
 
 // Класс, реализующий стек для хранения символов
 class Stack {

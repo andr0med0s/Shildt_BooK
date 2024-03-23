@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 // стр 97 Полное руководство 12-е издание
 // демонстрация приведений
 public class Conversion {

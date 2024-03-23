@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_6;
+package Exercise.Chapter_6;
 //стр 251 ------Упражнение 6.3--------Быстрая сортировка---------
 
 /*

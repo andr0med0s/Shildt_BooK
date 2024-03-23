@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_5;
+package Lesson.Chapter_5;
 
 //стр 198
 // Знакомство с классом String
@@ -52,7 +52,7 @@ class Strops {
         String str2 = new String(str1);
         String str3 = "Строки Java эффективны.";
         int result, idx;
-        char ch;
+        // char ch;
 
         System.out.println("Длина str1: " + str1.length());
 

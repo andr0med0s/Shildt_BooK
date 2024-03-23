@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_3;
+package Lesson.Chapter_3;
 //стр 127
 // Чтение вводимых данных до тех пор, пока не будет получена буква q
 class Break2 {

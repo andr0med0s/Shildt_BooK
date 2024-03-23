@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_3;
+package Exercise.Chapter_3;
 
  class Test {
     public static void main(String[] args) {

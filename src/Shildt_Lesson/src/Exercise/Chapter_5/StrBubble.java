@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Exercise.Chapter_5;
+package Exercise.Chapter_5;
 
 /*
 * 4. Измените программу, созданную в упражнении 5.1, таким образом, чтобы

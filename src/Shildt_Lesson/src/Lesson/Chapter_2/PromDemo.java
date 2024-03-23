@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_2;
+package Lesson.Chapter_2;
 //стр 95
 // Неожиданный результат повышения типов!
 public class PromDemo {

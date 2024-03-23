@@ -1,4 +1,4 @@
-package Shildt_Lesson.src.Lesson.Chapter_6;
+package Lesson.Chapter_6;
 
 //стр 245 руководство для начинающих
 //как в полном, но
