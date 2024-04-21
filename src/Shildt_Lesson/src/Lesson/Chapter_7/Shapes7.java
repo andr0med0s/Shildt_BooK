@@ -9,7 +9,7 @@
 
 //   private double width;
 //   private double height;
-
+  
 //   // Конструктор по умолчанию
 //   TwoDShape() {
 //     width = height = 0.0;
@@ -27,99 +27,69 @@
 //     width = height = х;
 //   }
 
-//   // Создание одного объекта на основе другого
-//   TwoDShape(TwoDShape ob) { //Конструирование объекта на основе другого объекта
+// // Создание одного объекта на основе другого
+// TwoDShape (TwoDShape ob) { //Конструирование объекта на основе другого объекта
 //     width = ob.width;
 //     height = ob.height;
-//   }
-
-//   // Методы доступа к переменным экземпляра width и height
-//   double getWidth() {
-//     return width;
-//   }
-
-//   double getHeight() {
-//     return height;
-//   }
-
-//   void setWidth(double w) {
-//     width = w;
-//   }
-
-//   void setHeight(double h) {
-//     height = h;
-//   }
-
-//   void showDim() {
-//     System.out.println("Ширина и высота - " + width + " и " + height);
-//   }
 // }
 
-// // Подкласс,  применяемый для представления треугольников
-// //и производный от класса TwoDShape
+//     // Методы доступа к переменным экземпляра width и height
+//     double getWidth()  {return width;}    
+//     double getHeight() {  return height;  }
+//     void setWidth(double w)  {  width = w;  }
+//     void setHeight(double h)  {  height = h;  }
 
-// class Triangle extends TwoDShape {
 
-//   private String style;
-
-//   // Конструктор по умолчанию
-//   Triangle() {
-//     super();
-//     style = "none";
-//   }
-
-//   // Конструктор класса Triangle
-//   Triangle(String s, double w, double h) {
-//     super(w, h); // вызов конструктора суперкласса
-//     style = s;
-//   }
-
-//   // Конструктор с одним аргументом для построения треугольника
-//   Triangle(double х) {
-//     super(х); // вызов конструктора суперкласса
-//     style = "закрашенный";
-//   }
-
-//   // Создание одного объекта на основе другого
-
-//   /*
-//    * В качестве параметра данному конструктору передается объект Triangle,
-//    * который затем с  помощью  вызова метода super ()  передается  конструктору
-//    * TwoDShape.
-//    */
-//   Triangle(Triangle ob) {
-//     super(ob); // передача объекта конструктору класса TwoDShape
-//     style = ob.style;
-//   }
-
-//   double area() {
-//     return getWidth() * getHeight() / 2;
-//   }
-
-//   void showStyle() {
-//     System.out.println("Треугольник " + style);
-//   }
+//     void showDim()  {System.out.println("Ширина и высота - "  + width +  " и "  + height);}
 // }
+//     // Подкласс,  применяемый для представления треугольников
+//     //и производный от класса TwoDShape
+//     class
+
+// Triangle extends TwoDShape  {
+//         private String style;
+//         // Конструктор по умолчанию
+//         Triangle()  {
+//             super();
+//             style = "none";
+//         }
+
+//         // Конструктор класса Triangle
+//         Triangle(String s,  double w,  double h)  {
+//             super(w,  h);  // вызов конструктора суперкласса
+//             style = s;
+//         }
+//         // Конструктор с одним аргументом для построения треугольника
+//         Triangle(double х)  {
+//             super(х);  // вызов конструктора суперкласса
+//             style = "закрашенный";
+//         }
+//         // Создание одного объекта на основе другого 
+//         Triangle(Triangle ob)  {
+//             super(ob);  // передача объекта конструктору класса TwoDShape
+//             style = ob.style;
+//         }
+
+//         double area()  {
+//             return getWidth()  * getHeight() / 2;
+//         }
+//         void showStyle()  {System.out.println("Треугольник " + style);
+//         }
+//     }
+
 
 // public class Shapes7 {
+//     public static void main(String args[])  {
+//         Triangle t1 = new Triangle("контурный",  8.0,  12.0);
+//         // создать  копию объекта tl
+//         Triangle t2 = new Triangle(t1);
+//         System.out.println("Информация о tl:  ");
+//         t1.showStyle();
+//         t1.showDim();
+//         System. out .println ( "Площадь  -  "  + t1.area());
+//         System.out.println();System.out.println("Информация о t2:  ");
+//         t2.showStyle();t2.showDim();
+//         System.out.println("Площадь  -  "  + t2.area());
+//     }
 
-//   public static void main(String args[]) {
-//     Triangle t1 = new Triangle("контурный", 8.0, 12.0);
-//     // создать  копию объекта tl
-//     Triangle t2 = new Triangle(t1);
-//     System.out.println("Информация о tl:  ");
-//     t1.showStyle();
-//     t1.showDim();
-//     System.out.println("Площадь  -  " + t1.area());
-//     System.out.println();
-//     System.out.println("Информация о t2:  ");
-//     t2.showStyle();
-//     t2.showDim();
-//     System.out.println("Площадь  -  " + t2.area());
-//   }
 // }
-
-// /*
-//  * Следует отметить,  что  конструктор TwoDshape ()  должен  получить объект типа TwoDShape, но конструктор Triangle ()  передает ему объект типа Triangle. Несмотря на это, каких-либо проблем не возникает. Ведь, как упоминалось ранее, ссылочная переменная суперкласса может ссылаться на объект подкласса. Следовательно, конструктору TwoDShape ()  можно передать ссылку на экземпляр подкласса, производного от класса TwoDshape. Конструктор TwoDShape ()  инициализирует лишь те части передаваемого ему объекта подкласса, которые являются членами класса TwoDshape, и потому не имеет значения, содержит ли этот объект дополнительные члены, добавленные в производных подклассах.
-//  */
-// //стр 292 next
