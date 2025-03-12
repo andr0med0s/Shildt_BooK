@@ -16,61 +16,8 @@ package Lesson.Chapter_8;
 ссылке в данной программе будут вызываться методы, принадлежащие классам ByTwos и ByThrees
  */
 
-// Использование интерфейсных ссылок
 
 // Использование интерфейсных ссылок
-class ByTwos implements Series {
-
-  int start;
-  int val;
-
-  ByTwos() {
-    start = 0;
-    val = 0;
-  }
-
-  public int getNext() {
-    val += 2;
-    return val;
-  }
-
-  public void reset() {
-    start = 0;
-    val = 0;
-  }
-
-  public void setStart(int x) {
-    start = x;
-    val = x;
-  }
-}
-
-class ByThrees implements Series {
-
-  int start;
-  int val;
-
-  ByThrees() {
-    start = 0;
-    val = 0;
-  }
-
-  public int getNext() {
-    val += 3;
-    return val;
-  }
-
-  public void reset() {
-    start = 0;
-    val = 0;
-  }
-
-  public void setStart(int x) {
-    start = x;
-    val = x;
-  }
-}
-
 public class SeriesDemo2 {
 
   public static void main(String[] args) {
@@ -91,5 +38,5 @@ public class SeriesDemo2 {
 /**
  * 
  * В  методе main()переменная ob объявляется  как ссылка  на  интерфейс Series. Это означает,  что в данной переменной  может храниться ссылка на любой объект, реализующий интерфейс Series. В данном случае в переменной ob сохраняется ссылка на объекты twoOb и threeOb, т.е. в разные моменты времени переменная представляет собой ссылку на объект класса ByTwos или же на объект класса ByThrees. Оба этих класса реализуют интерфейс Series.Переменная ссылки на интерфейс содержит сведения только о методах, объявленных в этом интерфейсе. Следовательно, переменную ob нельзя использовать для доступа к любым другим переменным и методам, которые поддерживаются в объекте, но не объявлены в интерфейсе
- * 
+ * стр 331
  */

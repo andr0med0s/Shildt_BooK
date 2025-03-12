@@ -16,170 +16,170 @@ package Lesson.Chapter_7;
  */
 
 // Использование динамической диспетчеризации методов
-class TwoDShape {
+// class TwoDShape {
 
-  private double width;
-  private double height;
-  private String name;
+//   private double width;
+//   private double height;
+//   private String name;
 
-  // Конструктор по умолчанию
-  TwoDShape() {
-    width = height = 0.0;
-    name = "none";
-  }
+//   // Конструктор по умолчанию
+//   TwoDShape() {
+//     width = height = 0.0;
+//     name = "none";
+//   }
 
-  // Параметризированный конструктор
-  TwoDShape(double w, double h, String n) {
-    width = w;
-    height = h;
-    name = n;
-  }
+//   // Параметризированный конструктор
+//   TwoDShape(double w, double h, String n) {
+//     width = w;
+//     height = h;
+//     name = n;
+//   }
 
-  // Создание объекта с одинаковыми значениями
-  // переменных экземпляра width и height
-  TwoDShape(double х, String n) {
-    width = height = х;
-    name = n;
-  }
+//   // Создание объекта с одинаковыми значениями
+//   // переменных экземпляра width и height
+//   TwoDShape(double х, String n) {
+//     width = height = х;
+//     name = n;
+//   }
 
-  // Создание одного объекта на основе другого
-  TwoDShape(TwoDShape ob) { //Конструирование объекта на основе другого объекта
-    width = ob.width;
-    height = ob.height;
-    name = ob.name;
-  }
+//   // Создание одного объекта на основе другого
+//   TwoDShape(TwoDShape ob) { //Конструирование объекта на основе другого объекта
+//     width = ob.width;
+//     height = ob.height;
+//     name = ob.name;
+//   }
 
-  // Методы доступа к переменным экземпляра width и height
-  double getWidth() {
-    return width;
-  }
+//   // Методы доступа к переменным экземпляра width и height
+//   double getWidth() {
+//     return width;
+//   }
 
-  double getHeight() {
-    return height;
-  }
+//   double getHeight() {
+//     return height;
+//   }
 
-  void setWidth(double w) {
-    width = w;
-  }
+//   void setWidth(double w) {
+//     width = w;
+//   }
 
-  void setHeight(double h) {
-    height = h;
-  }
+//   void setHeight(double h) {
+//     height = h;
+//   }
 
-  String getName() {
-    return name;
-  }
+//   String getName() {
+//     return name;
+//   }
 
-  void showDim() {
-    System.out.println("Ширина и высота - " + width + " и " + height);
-  }
+//   void showDim() {
+//     System.out.println("Ширина и высота - " + width + " и " + height);
+//   }
 
-  double area() {
-    System.out.println("Метод area() должен быть переопределен");
-    return 0.0;
-  }
-}
+//   double area() {
+//     System.out.println("Метод area() должен быть переопределен");
+//     return 0.0;
+//   }
+// }
 
-// Подкласс,  применяемый для представления треугольников
-//и производный от класса TwoDShape
+// // Подкласс,  применяемый для представления треугольников
+// //и производный от класса TwoDShape
 
-class Triangle extends TwoDShape {
+// class Triangle extends TwoDShape {
 
-  private String style;
+//   private String style;
 
-  // Конструктор по умолчанию
-  Triangle() {
-    super();
-    style = "none";
-  }
+//   // Конструктор по умолчанию
+//   Triangle() {
+//     super();
+//     style = "none";
+//   }
 
-  // Конструктор класса Triangle
-  Triangle(String s, double w, double h) {
-    super(w, h, "треугольник"); // вызов конструктора суперкласса
-    style = s;
-  }
+//   // Конструктор класса Triangle
+//   Triangle(String s, double w, double h) {
+//     super(w, h, "треугольник"); // вызов конструктора суперкласса
+//     style = s;
+//   }
 
-  // Конструктор с одним аргументом для построения треугольника
-  Triangle(double х) {
-    super(х, "треугольник"); // вызов конструктора суперкласса
-    style = "закрашенный";
-  }
+//   // Конструктор с одним аргументом для построения треугольника
+//   Triangle(double х) {
+//     super(х, "треугольник"); // вызов конструктора суперкласса
+//     style = "закрашенный";
+//   }
 
-  // Создание одного объекта на основе другого
+//   // Создание одного объекта на основе другого
 
-  /*
-   * В качестве параметра данному конструктору передается объект Triangle,
-   * который затем с  помощью  вызова метода super ()  передается  конструктору
-   * TwoDShape.
-   */
-  Triangle(Triangle ob) {
-    super(ob); // передача объекта конструктору класса TwoDShape
-    style = ob.style;
-  }
+//   /*
+//    * В качестве параметра данному конструктору передается объект Triangle,
+//    * который затем с  помощью  вызова метода super ()  передается  конструктору
+//    * TwoDShape.
+//    */
+//   Triangle(Triangle ob) {
+//     super(ob); // передача объекта конструктору класса TwoDShape
+//     style = ob.style;
+//   }
 
-  // Переопределение метода area()  для класса Triangle
-  double area() {
-    return getWidth() * getHeight() / 2; // Переопределение метода area()  для класса Triangle
-  }
+//   // Переопределение метода area()  для класса Triangle
+//   double area() {
+//     return getWidth() * getHeight() / 2; // Переопределение метода area()  для класса Triangle
+//   }
 
-  void showStyle() {
-    System.out.println("Треугольник " + style);
-  }
-}
+//   void showStyle() {
+//     System.out.println("Треугольник " + style);
+//   }
+// }
 
-// Подкласс для представления прямоугольников,
-// производный от класса TwoDShape
+// // Подкласс для представления прямоугольников,
+// // производный от класса TwoDShape
 
-class Rectangle extends TwoDShape {
+// class Rectangle extends TwoDShape {
 
-  // Конструктор по умолчанию
-  Rectangle() {
-    super();
-  }
+//   // Конструктор по умолчанию
+//   Rectangle() {
+//     super();
+//   }
 
-  // Конструктор класса Rectangle
-  Rectangle(double w, double h) {
-    super(w, h, "прямоугольник"); // вызов конструктора суперкласса
-  }
+//   // Конструктор класса Rectangle
+//   Rectangle(double w, double h) {
+//     super(w, h, "прямоугольник"); // вызов конструктора суперкласса
+//   }
 
-  // Создание квадрата
-  Rectangle(double х) {
-    super(х, "прямоугольник"); // вызов конструктора суперкласса
-  }
+//   // Создание квадрата
+//   Rectangle(double х) {
+//     super(х, "прямоугольник"); // вызов конструктора суперкласса
+//   }
 
-  // Создание одного объекта на основе другого
-  Rectangle(Rectangle ob) {
-    super(ob); // передача объекта конструктору класса TwoDShape
-  }
+//   // Создание одного объекта на основе другого
+//   Rectangle(Rectangle ob) {
+//     super(ob); // передача объекта конструктору класса TwoDShape
+//   }
 
-  boolean isSquare() {
-    if (getWidth() == getHeight()) return true;
-    return false;
-  }
+//   boolean isSquare() {
+//     if (getWidth() == getHeight()) return true;
+//     return false;
+//   }
 
-  // Переопределение метода area()  для класса Rectangle
-  double area() { // Переопределение метода area()  для класса Rectangle
-    return getWidth() * getHeight();
-  }
-}
+//   // Переопределение метода area()  для класса Rectangle
+//   double area() { // Переопределение метода area()  для класса Rectangle
+//     return getWidth() * getHeight();
+//   }
+// }
 
-public class DynShapes {
+// class DynShapes {
 
-  public static void main(String[] args) {
-    TwoDShape shapes[] = new TwoDShape[5];
-    shapes[0] = new Triangle("контурный", 8.0, 12.0);
-    shapes[1] = new Rectangle(10);
-    shapes[2] = new Rectangle(10, 4);
-    shapes[3] = new Triangle(7.0);
-    shapes[4] = new TwoDShape(10, 20, "фигура");
+//   public static void main(String[] args) {
+//     TwoDShape shapes[] = new TwoDShape[5];
+//     shapes[0] = new Triangle("контурный", 8.0, 12.0);
+//     shapes[1] = new Rectangle(10);
+//     shapes[2] = new Rectangle(10, 4);
+//     shapes[3] = new Triangle(7.0);
+//     shapes[4] = new TwoDShape(10, 20, "фигура");
 
-    for (int i = 0; i < shapes.length; i++) {
-      System.out.println("Объект -  " + shapes[i].getName());
-      System.out.println("Площадь  -  " + shapes[i].area());
-      System.out.println();
-    }
-  }
-}
+//     for (int i = 0; i < shapes.length; i++) {
+//       System.out.println("Объект -  " + shapes[i].getName());
+//       System.out.println("Площадь  -  " + shapes[i].area());
+//       System.out.println();
+//     }
+//   }
+// }
 
 
 /**
